@@ -1,6 +1,10 @@
-name: React.js CI
+name: React.js Pipeline CI
 
 on:
+  push:
+    branches:
+      - main
+      
   pull_request:
     branches: "main"
 

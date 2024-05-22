@@ -31,6 +31,14 @@ spec:
             secretKeyRef:
               name: mongo-secret
               key: mongo-uri
+        volumeMounts:
+        - name: mongo-config-volume
+          mountPath: /etc/mongo-config
+          readOnly: true
+      volumes:
+      - name: mongo-config-volume
+        secret:
+          secretName: mongo-secret
 ---
 apiVersion: v1
 kind: Service

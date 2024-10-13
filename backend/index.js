@@ -20,7 +20,7 @@ app.use(express.json()); // For parsing application/json
 // app.use(csrfProtection);
 
 // MongoDB connection string
-const dbUri = process.env.MONGO_URI;
+const dbUri = "mongodb+srv://devatlas:devatlas123@quizappdemo.owei8.mongodb.net/?retryWrites=true&w=majority&appName=quizappDemo"
 
 mongoose
   .connect(dbUri)

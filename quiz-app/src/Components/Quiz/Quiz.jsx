@@ -25,7 +25,7 @@ const Quiz = () => {
           // const apiUrl = import.meta.env.VITE_REACT_APP_API_URL || 'http://localhost:3000/api/questions';
           //const apiUrl = "http://quizapp.cloudcorehub.com/api/questions"
           //http://www.devatlas.org/
-          const apiUrl = "http://quizapp.devatlas.org/api/questions"
+          const apiUrl = "https://quizapp.devatlas.org/api/questions"
           const response = await fetch(apiUrl);
           if (!response.ok) throw new Error("Failed to fetch");
           let questions = await response.json();

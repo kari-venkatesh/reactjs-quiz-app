@@ -25,7 +25,7 @@ spec:
         image: manasseh9/frontend-js:latest
         env:
         - name: VITE_REACT_APP_API_URL         
-          value: "http://quizapp.devatlas.org/api/questions"
+          value: "https://quizapp.devatlas.org/api/questions"
         ports:
         - containerPort: 8080
 ---

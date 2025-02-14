@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: manasseh9/frontend-js:latest
+        image: venkateshkari/frontend-js:latest
         env:
         - name: VITE_REACT_APP_API_URL         
           value: "https://quizapp.devatlas.org/api/questions"
